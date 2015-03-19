@@ -249,7 +249,7 @@ exports.search = utils.toPromise(function (opts, callback) {
     }
 
     if (!Object.keys(docIdsToFieldsToQueryTerms).length) {
-      return callback(null, {total_row: 0, rows: []});
+      return callback(null, {total_rows: 0, rows: []});
     }
 
     var keys = Object.keys(docIdsToFieldsToQueryTerms).map(function (docId) {
